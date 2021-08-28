@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  section {
+    .section-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100vh;
+      .text-container {
+        a {
+          text-decoration: none;
+          h1 {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: "UnifrakturCook", cursive;
+            font-size: 3rem;
+            padding: 20px 40px;
+            position: relative;
+            transition: color 150ms ease-in;
+            transition-delay: 300ms;
+            z-index: 1;
+            &:after {
+              content: "";
+              display: block;
+              position: absolute;
+              height: 2px;
+              width: 0%;
+              bottom: 0;
+              left: 0;
+              z-index: -1;
+              background: rgba(255, 255, 255, 0.7);
+              transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                height 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            &:hover {
+              color: #fa969b;
+              cursor: pointer;
+              &:after {
+                width: 100%;
+                height: 6.1rem;
+              }
+            }
+          }
+        }
+      }
+      .ig-container {
+        display: none;
+      }
+    }
+  }
+}
