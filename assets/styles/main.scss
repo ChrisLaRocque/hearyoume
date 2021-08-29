@@ -61,8 +61,49 @@ body {
         }
       }
       .ig-container {
-        display: none;
+        // display: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 25%;
+        flex-wrap: wrap;
+        img,
+        video {
+          display: inline-block;
+          height: 360px;
+          width: 360px;
+          object-fit: cover;
+        }
       }
     }
   }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section {
+    .section-container {
+      display: block !important;
+    }
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }

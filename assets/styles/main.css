@@ -68,6 +68,53 @@ body section .section-container .text-container a h1:hover:after {
 }
 
 body section .section-container .ig-container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body section .section-container .ig-container img,
+body section .section-container .ig-container video {
+  display: inline-block;
+  height: 360px;
+  width: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  section .section-container {
+    display: block !important;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }
 /*# sourceMappingURL=main.css.map */
