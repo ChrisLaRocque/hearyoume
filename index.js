@@ -1,4 +1,8 @@
-fetch('https://graph.instagram.com/17841447027521354/media?fields=id,media_type,media_url,username,timestamp,caption,children&access_token=IGQVJWR2hYRXN1bWFjdmNKbHlYM2lpUWMxdU80UkduLXpKMjQ0eEpDQ1hsNnJmWDVJenRHd1BtQXNtY2xON0xfcVR2cXNXeUhIVVNnZAnBnUlNzdlktZA1hnQWpLamlTWDQ2NXlUd2pFVE81cjgyUWpuLUFpbkQyYldPd2Nn')
+// curl -i -X GET "https://graph.instagram.com/refresh_access_token
+//   ?grant_type=ig_refresh_token
+//   &access_token={long-lived-access-token}"
+
+fetch('https://graph.instagram.com/17841447027521354/media?fields=id,media_type,media_url,username,timestamp,caption,children&access_token=IGQVJWQjNnVk11RHh1MjBSQ0RjVTNfa241V0o4Q1EwN2N1R1dUdlNKRVYtUUVlT1RLWWsxYW9VdUlLeXlEOXg2UXpFenZAKaWJjdHQzbFR6dGVFeXNWTXdUUXZAYM0o4emQtUzNNQ3p3')
   .then(response => response.json())
   .then(data => {
 
